@@ -38,9 +38,22 @@ This scenario covers the most common workflow: recording your lesson and prepari
 
 ### 4. Open Camtasia and Dehydrate the Project
 1. Open Camtasia (if not already open).
-   - Open your project folder, for example: `C:/Users/YourName/Documents/CourseProject/RAW/`.
+   - Open your project folder, for example: `C:/Users/<YourName>/Documents/CourseProject/RAW/`.
 2. Import your raw recording (e.g., `lesson_01.mp4`) from the `RAW/` folder into a new project.
-3. Save the project as `lesson_01.tscproj` in the `EDIT/` folder (e.g., `C:/Users/YourName/Documents/CourseProject/EDIT/lesson_01.tscproj`).
+3. Save the project as `lesson_01.tscproj` in the `EDIT/` folder (e.g., `C:/Users/<YourName>/Documents/CourseProject/EDIT/lesson_01.tscproj`).
 4. To dehydrate (archive) the project, use File > Export > Zipped Project (or “Export as Zip”).
 
 **Rationale:** Using explicit folder paths and filenames ensures you always know where your assets are, reduces confusion, and makes the workflow accessible for everyone—including those who need concrete, step-by-step instructions.
+
+---
+
+## Concrete Folder Layout for This Use Case
+
+1. **Archives Folder:**
+   - `C:/Users/<YourName>/Documents/lesson_01/`
+   - This is where you will store your dehydrated (archived) project files and any long-term assets.
+2. **Editing Folder:**
+   - `C:/Users/<YourName>/Videos/lesson_01/`
+   - This is where you will do your active editing and keep your working files (e.g., raw recordings, Camtasia project files, etc.).
+
+We will follow these concrete folder paths step-by-step in this use case, so you can see exactly where every file goes and how to keep your workflow organized.
