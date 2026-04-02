@@ -144,4 +144,9 @@ graph TD
 
 ---
 
+> **See Also:**
+> - For a practical, folder-focused overview of how files move through each stage, see [Folder Architecture](../folder-architecture/Folder-Architecture.md).
+
+---
+
 _Last updated: April 2, 2026_
