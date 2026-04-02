@@ -7,7 +7,7 @@ This scenario covers the most common workflow: recording your lesson and prepari
 1. Camtasia (latest version) is installed and activated on your Windows machine. (A free trial is available; this course works with the trial version.)
 2. Audiate is installed and activated. (A free trial is available; this course works with the trial version.)
 3. (Optional) neep.com Noise Reducer is highly recommended for preparing audio. This cross-platform local tool reduces background noises such as fans, refrigerators, dogs barking, air conditioning, and noisy neighbors, improving your recording quality before editing. **Note:** neep is payware ($12/month as of April 2026, with the first month free). I do not receive any affiliate rewards for this recommendation. If you try it and subscribe to it, tell them Brother Bill sent you.  After 1,000 notifications, maybe the CEO of neep.com will thank me! 
-4. (Optional) Adobe Podcast or another audio enhancement tool is available for preparing audio.
+4. (Optional) Adobe Podcast or another audio enhancement tool is available for preparing audio. **Note:** Adobe Podcast is payware (about $10/month as of April 2026, with the first month free).
 5. You have sufficient disk space in your Videos/ and Documents/ folders.
 
 ---
