@@ -152,7 +152,9 @@ Camtasia may ONLY perform the following tasks:
 5. Perform CRUD operations on timeline tracks (add, remove, reorder).
 6. Silence audio on a track (without altering timing).
 7. Remove Dynamic Captions.
-8. Export the final lesson as MP4 or MP4 with Smart Player.
+8. Add visual effects and overlays (e.g., cursor highlighting, animated/non-animated shapes, arrows, titles, callouts) that do not alter timing or add/remove clips.
+9. Add transitions (e.g., fades, wipes) only if they do not change the duration or timing of any clip (no ripple edits or trimming).
+10. Export the final lesson as MP4 or MP4 with Smart Player.
 
 ### Rules
 
@@ -160,7 +162,7 @@ Camtasia may ONLY perform the following tasks:
 - Ensure the WAV and video start at the exact same timestamp (0:00.000).
 - Lock the audio track immediately after alignment.
 - Perform **no timing edits** in Camtasia. All pacing, cuts, and content edits must be done in Audiate.
-- Add only non-destructive visual elements (zoom, callouts, cursor effects) that do not alter timing.
+- Add only non-destructive visual elements (zoom, callouts, cursor effects, overlays, transitions as above) that do not alter timing or clip structure.
 - Keep all media files inside the project folder to avoid broken links.
 - Save frequently using the same project filename.
 
@@ -198,7 +200,6 @@ This stage produces the final deliverable for distribution or upload. The goal i
 - Do NOT rename the file after export.
 - Do NOT store drafts or test exports in the OUT folder.
 - Do NOT modify the OUT file after export; repeat the workflow if changes are needed.
-
 ---
 
 ## Revision Workflow (Post-Release Fixes)
@@ -227,7 +228,4 @@ If an error (e.g., a typo in captions) is discovered after export, follow these 
 6. **Document the Change**
    - Log the revision, reason, and date in your change tracking system or a simple text file.
 
-### Do NOT:
-- Do NOT edit the RAW or ADOBE artifacts.
-- AUDIATE files are expected to change over time as typos are fixed.
 - Do NOT skip quality checks after export.

@@ -20,7 +20,7 @@ A concise, deterministic workflow for producing course videos using the canonica
 ## Naming Rules
 - lesson_##.mp4  
 - lesson_##.wav  
-- lesson_##_enhanced.wav  
+- lesson_##_audio_enhanced.wav  
 - lesson_##_audiate.wav  
 - lesson_##.srt  
 
@@ -35,17 +35,49 @@ Save the raw recording into the `RAW/` folder using the deterministic naming con
 
 ### 2. Audio Enhancement (ADOBE/)
 Enhance the audio using Adobe tools (e.g., Enhance Speech).  
-Export the cleaned WAV into the `ADOBE/` folder with the `_enhanced` suffix.
+Export the cleaned WAV into the `ADOBE/` folder with the `_audio_enhanced` suffix.
 
 ### 3. Audiate Cleanup (AUDIATE/)
 Import the enhanced WAV into Audiate.  
 Perform transcript cleanup, silence removal, and timing corrections.  
 Export the final WAV + SRT into the `AUDIATE/` folder.
 
-### 4. Camtasia Editing (EDIT/)
+### 4. Camtasia Editing (EDIT, governed by CAOL)
 Create a new Camtasia project in the `EDIT/` folder.  
 Import the Audiate WAV + SRT.  
 Assemble the timeline, add callouts, transitions, and visual polish.
+
+#### Camtasia Allowed Operations List (CAOL)
+Camtasia may ONLY perform the following tasks:
+1. Import audio files and MP4 files (including OBS Studio recordings).
+2. Rehydrate incoming Camtasia assets, including:
+   - .trec and .cmrec recordings from Camtasia Recorder (Mac or Windows),
+   - Zipped Project exports created by Camtasia,
+   - Manually dehydrated lesson folders following the 5‑folder structure.
+3. Send the audio track to Audiate **once** to create the initial .audiate session file. All further audio or transcript edits must be done by reopening the .audiate file directly.
+4. Pass the audio track to Audiate for transcript-based editing.
+5. Perform CRUD operations on timeline tracks (add, remove, reorder).
+
+8. Add visual effects and overlays (e.g., cursor highlighting, animated/non-animated shapes, arrows, titles, callouts) that do not alter timing or add/remove clips.
+9. Add transitions (e.g., fades, wipes) only if they do not change the duration or timing of any clip (no ripple edits or trimming).
+10. Export the final lesson as MP4 or MP4 with Smart Player.
+
+**Rules:**
+- Place the Audiate WAV on the timeline and disable the audio from the RAW video.
+- Ensure the WAV and video start at the exact same timestamp (0:00.000).
+- Lock the audio track immediately after alignment.
+- Perform **no timing edits** in Camtasia. All pacing, cuts, and content edits must be done in Audiate.
+- Add only non-destructive visual elements (zoom, callouts, cursor effects, overlays, transitions as above) that do not alter timing or clip structure.
+- Keep all media files inside the project folder to avoid broken links.
+- Save frequently using the same project filename.
+
+**Do NOT:**
+- Do NOT cut, trim, ripple-delete, or modify timing in any way.
+- Do NOT adjust pacing or remove sections (these belong in Audiate).
+- Do NOT modify audio except for silencing a track.
+- Do NOT export audio from Camtasia (Audiate is the single timing authority).
+- Do NOT move or rename media files after importing them.
+- Do NOT create multiple project files for the same lesson.
 
 ### 5. Export (OUT/)
 Export the final MP4 into the `OUT/` folder.  
@@ -149,7 +181,7 @@ A workflow run is considered successful when all of the following are true:
 
 1. **Only one WAV exists per stage**  
    - `RAW/lesson_##.wav`  
-   - `ADOBE/lesson_##_enhanced.wav`  
+   - `ADOBE/lesson_##_audio_enhanced.wav`
    - `AUDIATE/lesson_##_audiate.wav`
 
 2. **Captions match the final audio exactly**  
