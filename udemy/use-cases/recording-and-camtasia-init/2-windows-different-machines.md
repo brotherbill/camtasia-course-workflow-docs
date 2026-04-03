@@ -44,48 +44,82 @@ This scenario covers the workflow for recording your lesson on one Windows machi
 
 ### 1. Prepare Your Folder Structure
 
-1. In File Explorer on Machine A, create the following folder for your lesson: 
+1. In File Explorer on Machine A, create the following empty folder for your lesson: 
    - `C:\Users\<YourName>\Videos\lesson_01\`
+2. Navigate to Videos\lesson_01\
+3. Add folders RAW\ and EDIT\
 
 > **Transfer Note:** Only the dehydrated Camtasia Project zip file (e.g., `lesson_01_CAMTASIA_PROJECT.zip`) needs to be copied to Dropbox (or your chosen transfer method) for use on Machine B. You do not need to mirror the entire folder structure in Dropbox—just transfer the zip file.
 
 ### 2. Launch Camtasia Editor Recorder
 
-1. Open Camtasia Editor Recorder. (Note: Despite the name, this app does not edit—it only records. The name is a marketing choice, not a description of its function.)
+1. Open Camtasia Editor Recorder. (Note: Despite the name, this app does not edit—it only records. (The name is a marketing choice, not a description of its function.)
 2. Set your capture area, microphone, and camera as needed.
    - If you are using neep.com Noise Reducer, ensure your microphone input in Camtasia Recorder is set to "neep" (not Shure MV7+ or another physical microphone).
 
-**Rationale:** Camtasia Recorder is optimized for screen and voice capture, making it easy to start your lesson. Setting the correct input ensures your audio is processed by neep before recording.
+**Rationale:** Camtasia Editor Recorder is optimized for screen and voice capture, making it easy to start your lesson. Setting the correct input ensures your audio is processed by neep before recording.
 
 ### 3. Do a "Show and Tell" Recording
 
 1. Click the big red “Rec” button to begin recording.
 2. Narrate and demonstrate your lesson content.
 3. When finished, click “Stop.”
+4. This will bring up Save Recording dialog box.
+   1. Navigate to Videos\lesson_01\
+   2. Open RAW/ sub-folder
+   3. Set File name to lesson_01.trec
+   4. Click Save.
+
+5. Camtasia Rev app will open.  
+   1. Continue in next step.
+
 
 **Rationale:** Recording in one take keeps the workflow simple and avoids editing headaches later. With Camtasia, it is especially easy to remove repeated phrases or mistakes—just delete the unwanted ("dirty") take and keep the clean one. This makes editing your video almost as easy as editing a text document.
 
 ### 4. Open Camtasia and Dehydrate the Project
 
-1. Click "Open in Editor" to bring up Camtasia Editor.
+1. Camtasia Rev app was opened in last step.
 
-2. Do not start editing yet. Instead, immediately dehydrate (archive) your raw recording and project files:
+2. Click "Open in Editor" button to bring up Camtasia Editor.
 
-   1. In Camtasia, go to File > Export > Zipped Project
+3. File > Save
 
-   - Save the zip file as `lesson_01_CAMTASIA_PROJECT.zip` in the `Videos\lesson_01` folder:
-     `Videos\lesson_01\lesson_01_CAMTASIA_PROJECT.zip`
-   - This creates a dehydrated, portable snapshot of your editing state, making it easy to back up or transfer your project.
+   1. File path:  \Videos\lesson_01\EDIT\
 
-**Rationale:** Archiving your raw assets and project files before editing ensures you always have a clean, restorable starting point. This is critical for reproducibility and disaster recovery.
+   2. File name: lesson_01.tscproj
 
-### 5. Transfer the Project to Machine B
+4. Do not start editing yet. Instead, immediately dehydrate (archive) your raw recording and project files:
 
-1. Copy the file `Videos\lesson_01\lesson_01_CAMTASIA_PROJECT.zip` from Machine A to Dropbox (or your chosen transfer method). This is the only file you need to archive and transfer.
+    1. In Camtasia, go to File > Export > Zipped Project...
 
-   > **Why this works:** Because you are recording on one Windows machine with Camtasia and editing on another Windows machine, you can take this shortcut—just build and transfer `lesson_01_CAMTASIA_PROJECT.zip`. The editing machine only needs this single file to fully restore and continue your project. All required assets are included in the Camtasia Zipped Project file.
+    - Save the zip file as
+       1.  File path: \Videos\lesson_01\EDIT\
+       2. File name: lesson_01_CAMTASIA_PROJECT.zip
+       3. Click Save button
+    - This step creates a special Camtasia zipped project file that contains everything needed to restore your project on another machine. It is not just an archive of raw files—it is the official Camtasia backup format, required for moving or restoring your project.
 
-2. Wait for Dropbox (or your chosen transfer method) to fully sync the zip file to the cloud or USB drive.
+**Rationale:** Creating the Camtasia zipped project file before editing ensures you always have a clean, restorable starting point. This is critical for reproducibility and disaster recovery, and guarantees that all assets and project settings are included for transfer or backup.
+
+
+### 5. Archive lesson_01 to Dropbox
+
+1. Navigate to:  \Videos\lesson_01
+
+2. Select all files with Control + A
+
+3. Right-click on any of the selected folders, then select: "Compress to..." > ZIP File
+
+4. Rename that file to: `lesson_01_CAMTASIA_PROJECT.zip`
+
+5. Upload that file from Machine A to Dropbox (or your chosen transfer method). This is the only file you need to archive and transfer.
+
+6. Wait for Dropbox (or your chosen transfer method) to fully sync the zip file to the cloud or USB drive.
+
+7. You may now delete \Videos\lesson_01 from Machine A, as your files are backed up to Dropbox.
+
+8. You may close Camtasia Editor
+
+> **Note:** Repeating steps 1–5 is not a mistake—it’s a valuable double-check that ensures your workflow is truly repeatable and robust. Each run-through helps validate and strengthen your process. Accentuate the positive: repetition means reliability!
 
 **Rationale:** Waiting for full sync ensures that all assets are available and up-to-date on Machine B before you begin editing. Skipping this step can lead to missing files or broken project links.
 
@@ -144,6 +178,6 @@ This scenario covers the workflow for recording your lesson on one Windows machi
 
 ---
 
-> **Important:** You do not need to understand every step in this workflow. What matters is having the discipline to follow each step in the **exact order shown**. This process is like using a power saw: you must respect the tool and follow all safety protocols, even if you don’t know all the details. Trust the workflow—precision and order are critical for success and safety.
+> **Important:** You do not need to understand every step in this workflow. What matters is having the discipline to follow each step in the **exact order shown**. This process is like using a power saw: you must respect the tool and follow all safety protocols, even if you don’t know all the details. Trust the workflow.  Precision and order are critical for success and safety.
 
 > **Strict Folder Rule:** Every asset for `lesson_01` must be stored inside one of the five subfolders: `RAW`, `EDIT`, `EXPORT`, `FINAL`, or `DOCS`. Do not create any other folders or leave stray files outside these five. This discipline ensures your project stays deterministic, organized, and reproducible.
