@@ -106,11 +106,11 @@ This scenario covers the workflow for recording your lesson on one Windows machi
 
 **Rationale:** Setting up your folder structure before you begin ensures all assets are organized from the start and makes every step that follows deterministic and easy to follow.
 
-### 1. Rehydrate Camtasia Project (from Machine A)
+### 1. Download Camtasia Project (from Machine A)
 
 1. On Machine B, ensure Dropbox (or your transfer method) has finished syncing and the zip file is available locally.  Save to `Videos\lesson_01\EDIT\lesson_01_CAMTASIA_PROJECT.zip`
 
-### 2. Rehydrate and Continue Editing
+### 2. Rehydrate Camtasia Project (from Machine A)
 
 1. On Machine B, open the `lesson_01_CAMTASIA_PROJECT.zip` file from the `Videos\lesson_01\EDIT\lesson_01` folder in Camtasia.
 
