@@ -1,4 +1,3 @@
-
 # Use Case: Recording and Editing Camtasia Projects Across Different Windows Machines
 
 This scenario covers the workflow for recording your lesson on one Windows machine (Machine A) and editing it on another Windows machine (Machine B), using Dropbox, OneDrive, Google Drive, or a USB drive for transfer. The workflow is fully explicit and rationale-rich.
@@ -25,11 +24,18 @@ This scenario covers the workflow for recording your lesson on one Windows machi
 
 > **Note:** Camtasia and its audio workflow (including Audiate and recommended tools) are tuned for voice recording, narration, and spoken content—not for music or singing. If you need to record music, consider using a Digital Audio Workstation (DAW) or specialized music recording software.
 
+
+
+---
+
+
+
+---
+
 ## Baby Steps: Recording, Dehydrating, Transferring, and Rehydrating
 
-
 ### 1. Prepare Your Folder Structure on Machine A (Recording)
-1. In File Explorer on Machine A, create the following folder for your lesson:
+1. In File Explorer on Machine A, create the following folder for your lesson: 
    - `C:\Users\<YourName>\Videos\lesson_01\`
 
 > **Transfer Note:** Only the dehydrated Camtasia Project zip file (e.g., `lesson_01_CAMTASIA_PROJECT.zip`) needs to be copied to Dropbox (or your chosen transfer method) for use on Machine B. You do not need to mirror the entire folder structure in Dropbox—just transfer the zip file.
@@ -46,45 +52,28 @@ This scenario covers the workflow for recording your lesson on one Windows machi
 2. Narrate and demonstrate your lesson content.
 3. When finished, click “Stop.”
 
-**Rationale:** Recording in one take keeps the workflow simple and avoids editing headaches later. With Camtasia and Audiate, it is especially easy to remove repeated phrases or mistakes—just delete the unwanted ("dirty") take and keep the clean one. This makes editing your video almost as easy as editing a text document.
-
+**Rationale:** Recording in one take keeps the workflow simple and avoids editing headaches later. With Camtasia, it is especially easy to remove repeated phrases or mistakes—just delete the unwanted ("dirty") take and keep the clean one. This makes editing your video almost as easy as editing a text document.
 
 ### 4. Open Camtasia and Dehydrate the Project (on Machine A)
 1. Click "Open in Editor" to bring up Camtasia Editor.
 2. Do not start editing yet. Instead, immediately dehydrate (archive) your raw recording and project files:
    1. In Camtasia, go to File > Export > Zipped Project
-    - Save the zip file as `lesson_01_CAMTASIA_PROJECT.zip` in the `Videos\lesson_01` folder:
-       `Videos\lesson_01\lesson_01_CAMTASIA_PROJECT.zip`
+   - Save the zip file as `lesson_01_CAMTASIA_PROJECT.zip` in the `Videos\lesson_01` folder:
+     `Videos\lesson_01\lesson_01_CAMTASIA_PROJECT.zip`
    - This creates a dehydrated, portable snapshot of your editing state, making it easy to back up or transfer your project.
 
 **Rationale:** Archiving your raw assets and project files before editing ensures you always have a clean, restorable starting point. This is critical for reproducibility and disaster recovery.
 
----
-
-> **Important Distinction:**
-> - A regular zip file (e.g., `lesson_01_ALL.zip`) contains all files and folders in your `lesson_01` directory—this is a generic archive for backup or transfer.
-> - The Camtasia Project zip file (`lesson_01_CAMTASIA_PROJECT.zip`) is created via Camtasia's File > Export > Zipped Project. It contains only the Camtasia project and its linked assets, in a format Camtasia can restore directly. Do not confuse these two: only the Camtasia Project zip can be opened natively by Camtasia for editing.
-
----
-
-> **Dehydration & Rehydration Terminology (DDD):**
-> - **lesson_01_ALL.zip**: This is a full dehydration of your entire lesson_01 folder—all files and subfolders are zipped. Rehydration means unzipping to restore everything exactly as it was. Use this for complete backups, transfers, or archiving the entire project state.
-> - **lesson_01_CAMTASIA_PROJECT.zip**: This is a Camtasia-specific dehydration, created via File > Export > Zipped Project. Rehydration means opening this file in Camtasia to restore the project and its linked assets. This does not restore Audiate projects or non-Camtasia files—rehydrating Audiate assets may require a separate export/import or backup process.
-
-> **Note:** If you use Audiate, ensure you also export or back up your Audiate project files separately, as they are not included in the Camtasia Project zip. Store these in the RAW or EDIT folder as appropriate, and consider including them in lesson_01_ALL.zip for full reproducibility.
-
----
-
-> **Audiate Note:** At this stage in the workflow, Audiate has not yet been introduced into the Camtasia project. Therefore, there is no dehydration or rehydration of Audiate assets required at this point. Dehydrating and rehydrating Audiate assets will be covered later in this course when Audiate is integrated into the workflow.
-
 ### 5. Transfer the Project to Machine B
-1. Wait for Dropbox (or your chosen transfer method) to fully sync all files and folders to the cloud or USB drive.
-2. On Machine B, ensure Dropbox (or your transfer method) has finished syncing and all files are available locally.
+1. Copy the file `Videos\lesson_01\lesson_01_CAMTASIA_PROJECT.zip` from Machine A to Dropbox (or your chosen transfer method). This is the only file you need to archive and transfer.
+   > **Why this works:** Because you are recording on one Windows machine with Camtasia and editing on another Windows machine, you can take this shortcut—just build and transfer `lesson_01_CAMTASIA_PROJECT.zip`. The editing machine only needs this single file to fully restore and continue your project. All required assets are included in the Camtasia Zipped Project file.
+2. Wait for Dropbox (or your chosen transfer method) to fully sync the zip file to the cloud or USB drive.
+3. On Machine B, ensure Dropbox (or your transfer method) has finished syncing and the zip file is available locally.
 
 **Rationale:** Waiting for full sync ensures that all assets are available and up-to-date on Machine B before you begin editing. Skipping this step can lead to missing files or broken project links.
 
 ### 6. Rehydrate and Continue Editing (on Machine B)
-1. On Machine B, open the `lesson_01_CAMTASIA_PROJECT.zip` file from the `EDIT` folder in Camtasia.
+1. On Machine B, open the `lesson_01_CAMTASIA_PROJECT.zip` file from the `Videos\lesson_01` folder in Camtasia.
 2. Extract and restore your project as needed.
 3. Continue editing, exporting, or archiving as desired.
 
