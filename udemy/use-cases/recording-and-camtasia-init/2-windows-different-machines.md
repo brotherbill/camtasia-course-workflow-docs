@@ -123,8 +123,6 @@ This scenario covers the workflow for recording your lesson on one Windows machi
 
 8. You may close Camtasia Editor
 
-> **Note:** Repeating steps 1–5 is not a mistake—it’s a valuable double-check that ensures your workflow is truly repeatable and robust. Each run-through helps validate and strengthen your process. Accentuate the positive: repetition means reliability!
-
 **Rationale:** Waiting for full sync ensures that all assets are available and up-to-date on Machine B before you begin editing. Skipping this step can lead to missing files or broken project links.
 
 ---
