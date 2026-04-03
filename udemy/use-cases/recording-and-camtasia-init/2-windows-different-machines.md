@@ -34,27 +34,29 @@ This scenario covers the workflow for recording your lesson on one Windows machi
 
 ## Baby Steps: Recording, Dehydrating, Transferring, and Rehydrating
 
-### 1. Prepare Your Folder Structure on Machine A (Recording)
+## Machine A (Recording)
+
+### 1. Prepare Your Folder Structure
 1. In File Explorer on Machine A, create the following folder for your lesson: 
    - `C:\Users\<YourName>\Videos\lesson_01\`
 
 > **Transfer Note:** Only the dehydrated Camtasia Project zip file (e.g., `lesson_01_CAMTASIA_PROJECT.zip`) needs to be copied to Dropbox (or your chosen transfer method) for use on Machine B. You do not need to mirror the entire folder structure in Dropbox—just transfer the zip file.
 
-### 2. Launch Camtasia Editor Recorder (on Machine A)
+### 2. Launch Camtasia Editor Recorder
 1. Open Camtasia Editor Recorder. (Note: Despite the name, this app does not edit—it only records. The name is a marketing choice, not a description of its function.)
 2. Set your capture area, microphone, and camera as needed.
    - If you are using neep.com Noise Reducer, ensure your microphone input in Camtasia Recorder is set to "neep" (not Shure MV7+ or another physical microphone).
 
 **Rationale:** Camtasia Recorder is optimized for screen and voice capture, making it easy to start your lesson. Setting the correct input ensures your audio is processed by neep before recording.
 
-### 3. Do a "Show and Tell" Recording (on Machine A)
+### 3. Do a "Show and Tell" Recording
 1. Click the big red “Rec” button to begin recording.
 2. Narrate and demonstrate your lesson content.
 3. When finished, click “Stop.”
 
 **Rationale:** Recording in one take keeps the workflow simple and avoids editing headaches later. With Camtasia, it is especially easy to remove repeated phrases or mistakes—just delete the unwanted ("dirty") take and keep the clean one. This makes editing your video almost as easy as editing a text document.
 
-### 4. Open Camtasia and Dehydrate the Project (on Machine A)
+### 4. Open Camtasia and Dehydrate the Project
 1. Click "Open in Editor" to bring up Camtasia Editor.
 2. Do not start editing yet. Instead, immediately dehydrate (archive) your raw recording and project files:
    1. In Camtasia, go to File > Export > Zipped Project
