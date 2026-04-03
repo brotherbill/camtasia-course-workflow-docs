@@ -34,6 +34,7 @@ This scenario covers the most common workflow: recording your lesson and prepari
 1. Open Camtasia Editor Recorder. (Note: Despite the name, this app does not edit—it only records. The name is a marketing choice, not a description of its function.)
 2. Set your capture area, microphone, and camera as needed.
    - If you are using neep.com Noise Reducer, ensure your microphone input in Camtasia Recorder is set to "neep" (not Shure MV7+ or another physical microphone).
+3. Position your microphone for recording.
 
 **Rationale:** Camtasia Recorder is optimized for screen and voice capture, making it easy to start your lesson. Setting the correct input ensures your audio is processed by neep before recording.
 
@@ -65,6 +66,23 @@ This scenario covers the most common workflow: recording your lesson and prepari
     - Save the zip file as `lesson_01_CAMTASIA_PROJECT.zip` in the `EDIT` folder:
        `C:\Users\<YourName>\Videos\lesson_01\EDIT\lesson_01_CAMTASIA_PROJECT.zip`
    - This creates a dehydrated, portable snapshot of your editing state, making it easy to back up or transfer your project.
+
+### 5. Archive lesson_01 to Dropbox
+
+1. In File Explorer, navigate to:  \Videos\lesson_01\
+
+2. Select all files with Control + A
+
+3. Right-click on any of the selected folders, then select: "Compress to..." > ZIP File
+
+4. Rename that file to: `lesson_01_ALL.zip`
+
+5. Upload that file from Machine A to Dropbox (or your chosen transfer method). This is the only file you need to archive and transfer.
+   1. I saved it in DropBox root folder `Camtasia and Audiate course`
+
+6. Wait for Dropbox (or your chosen transfer method) to fully sync the zip file to the cloud or USB drive.
+
+7. 
 
 **Rationale:** Archiving your raw assets and project files before editing ensures you always have a clean, restorable starting point. This is critical for reproducibility and disaster recovery.
 
