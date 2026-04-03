@@ -129,22 +129,17 @@ This scenario covers the workflow for recording your lesson on one Windows machi
 
 ## Machine B (editing)
 
-### 0. Prepare Your Folder Structure
-
-1. In File Explorer, create the following folder for your lesson:
-   - `C:\Users\<YourName>\Videos\lesson_01\`
-2. Inside `lesson_01`, create these five subfolders:
-   1. `RAW`
-   2. `EDIT`
-   3. `EXPORT`
-   4. `FINAL`
-   5. `DOCS`
-
-**Rationale:** Setting up your folder structure before you begin ensures all assets are organized from the start and makes every step that follows deterministic and easy to follow.
-
 ### 1. Download Camtasia Project (from Machine A)
 
-1. On Machine B, ensure Dropbox (or your transfer method) has finished syncing and the zip file is available locally.  Save to `Videos\lesson_01\EDIT\lesson_01_CAMTASIA_PROJECT.zip`
+1. On Machine B, ensure Dropbox (or your transfer method) has finished syncing and the zip file is available locally.
+2. From Dropbox, navigate to `Camtasia and Audiate course`, right-click on lesson_01_ALL.zip, then select: Download
+   - Save to: Videos\lesson_01_ALL.zip
+   - Click: Save
+3. In File Explorer, right-click on Videos\lesson_01_ALL.zip, then select "Extract All...", and click the "Extract" button.
+4. Rename the extracted folder from Videos\lesson_01_ALL to Videos\lesson_01.
+5. You may delete Videos\lesson_01_ALL.zip.
+
+> **Result:** You should now have Videos\lesson_01\ with all five subfolders (RAW, EDIT, EXPORT, FINAL, DOCS) inside.
 
 ### 2. Rehydrate Camtasia Project (from Machine A)
 
