@@ -14,13 +14,13 @@ This scenario covers the most common workflow: recording your lesson and prepari
 
 > **Note:** Camtasia and its audio workflow (including Audiate and recommended tools) are tuned for voice recording, narration, and spoken content—not for music or singing. If you need to record music, consider using a Digital Audio Workstation (DAW) or specialized music recording software.
 
-> **Platform Note:** On Windows, Camtasia uses the term "Zipped Project" for its special archive format (e.g., lesson_01_RAW_ZippedProject.zip). On Mac, the equivalent is often just called "Project" or uses a different archive format. Be aware of these naming and compatibility differences if you work across platforms.
+> **Platform Note:** On Windows, Camtasia uses the term "Zipped Project" for its special archive format (e.g., lesson_01_CAMTASIA_PROJECT.zip). On Mac, the equivalent is often just called "Project" or uses a different archive format. Be aware of these naming and compatibility differences if you work across platforms.
 
 ## Baby Steps: Recording, Dehydrating, and Rehydrating
 
 ### 0. Prepare Your Folder Structure
 1. In File Explorer, create the following folder for your lesson:
-   - `C:/Users/<YourName>/Videos/lesson_01/`
+   - `C:\Users\<YourName>\Videos\lesson_01\`
 2. Inside `lesson_01`, create these five subfolders:
    1. `RAW`
    2. `EDIT`
@@ -56,14 +56,14 @@ This scenario covers the most common workflow: recording your lesson and prepari
    1. This brings up Camtasia Editor.
 
 2. File > Save
-   - Save your project as `lesson_01.tscproj` in the `EDIT` folder:
-     `C:/Users/<YourName>/Videos/lesson_01/EDIT/lesson_01.tscproj`
+    - Save your project as `lesson_01.tscproj` in the `EDIT` folder:
+       `C:\Users\<YourName>\Videos\lesson_01\EDIT\lesson_01.tscproj`
    - This keeps your editable Camtasia project file organized and separate from your raw assets.
 
 3. Do not start editing yet. Instead, immediately dehydrate (archive) your raw recording and project files:
    1. In Camtasia, go to File > Export > Zipped Project
-   - Save the zip file as `lesson_01_ProjectZipped.zip` in the `EDIT` folder:
-     `C:/Users/<YourName>/Videos/lesson_01/EDIT/lesson_01_ProjectZipped.zip`
+    - Save the zip file as `lesson_01_CAMTASIA_PROJECT.zip` in the `EDIT` folder:
+       `C:\Users\<YourName>\Videos\lesson_01\EDIT\lesson_01_CAMTASIA_PROJECT.zip`
    - This creates a dehydrated, portable snapshot of your editing state, making it easy to back up or transfer your project.
 
 **Rationale:** Archiving your raw assets and project files before editing ensures you always have a clean, restorable starting point. This is critical for reproducibility and disaster recovery.
@@ -72,15 +72,15 @@ This scenario covers the most common workflow: recording your lesson and prepari
 
 > **Important Distinction:**
 > - A regular zip file (e.g., `lesson_01_FULL.zip`) contains all files and folders in your `lesson_01` directory—this is a generic archive for backup or transfer.
-> - The Camtasia Zipped Project file (`lesson_01_ProjectZipped.zip`) is created via Camtasia's File > Export > Zipped Project. It contains only the Camtasia project and its linked assets, in a format Camtasia can restore directly. Do not confuse these two: only the Camtasia Zipped Project can be opened natively by Camtasia for editing.
+> - The Camtasia Project zip file (`lesson_01_CAMTASIA_PROJECT.zip`) is created via Camtasia's File > Export > Zipped Project. It contains only the Camtasia project and its linked assets, in a format Camtasia can restore directly. Do not confuse these two: only the Camtasia Project zip can be opened natively by Camtasia for editing.
 
 ---
 
 > **Dehydration & Rehydration Terminology (DDD):**
 > - **lesson_01_ALL.zip**: This is a full dehydration of your entire lesson_01 folder—all files and subfolders are zipped. Rehydration means unzipping to restore everything exactly as it was. Use this for complete backups, transfers, or archiving the entire project state.
-> - **lesson_01_CAMTASIA_ZIPPED_PROJECT.zip**: This is a Camtasia-specific dehydration, created via File > Export > Zipped Project. Rehydration means opening this file in Camtasia to restore the project and its linked assets. This does not restore Audiate projects or non-Camtasia files—rehydrating Audiate assets may require a separate export/import or backup process.
+> - **lesson_01_CAMTASIA_PROJECT.zip**: This is a Camtasia-specific dehydration, created via File > Export > Zipped Project. Rehydration means opening this file in Camtasia to restore the project and its linked assets. This does not restore Audiate projects or non-Camtasia files—rehydrating Audiate assets may require a separate export/import or backup process.
 
-> **Note:** If you use Audiate, ensure you also export or back up your Audiate project files separately, as they are not included in the Camtasia Zipped Project. Store these in the RAW or EDIT folder as appropriate, and consider including them in lesson_01_ALL.zip for full reproducibility.
+> **Note:** If you use Audiate, ensure you also export or back up your Audiate project files separately, as they are not included in the Camtasia Project zip. Store these in the RAW or EDIT folder as appropriate, and consider including them in lesson_01_ALL.zip for full reproducibility.
 
 ---
 
@@ -89,22 +89,22 @@ This scenario covers the most common workflow: recording your lesson and prepari
 ## Concrete Folder Layout for This Use Case
 
 1. **Lesson Folder:**
-   - `C:/Users/<YourName>/Videos/lesson_01/`
+   - `C:\Users\<YourName>\Videos\lesson_01\`
    - This is your main working folder for the lesson. All subfolders for RAW, EDIT, EXPORT, FINAL, and DOCS will be created here.
 2. **RAW Folder:**
-   - `C:/Users/<YourName>/Videos/lesson_01/RAW/`
+   - `C:\Users\<YourName>\Videos\lesson_01\RAW\`
    - Store your original/raw recordings and project dehydrated (zipped) project files here.
 3. **EDIT Folder:**
-   - `C:/Users/<YourName>/Videos/lesson_01/EDIT/`
+   - `C:\Users\<YourName>\Videos\lesson_01\EDIT\`
    - Save your Camtasia project files (`.tscproj`) and Zipped Projects here.
 4. **EXPORT Folder:**
-   - `C:/Users/<YourName>/Videos/lesson_01/EXPORT/`
+   - `C:\Users\<YourName>\Videos\lesson_01\EXPORT\`
    - Use for intermediate exports or files to be further processed.
 5. **FINAL Folder:**
-   - `C:/Users/<YourName>/Videos/lesson_01/FINAL/`
+   - `C:\Users\<YourName>\Videos\lesson_01\FINAL\`
    - Place your finished, deliverable videos and student-facing documents here.
 6. **DOCS Folder:**
-   - `C:/Users/<YourName>/Videos/lesson_01/DOCS/`
+   - `C:\Users\<YourName>\Videos\lesson_01\DOCS\`
    - Keep all internal documentation, workflow notes, and reference materials here.
 
 We will follow these concrete folder paths step-by-step in this use case, so you can see exactly where every file goes and how to keep your workflow organized.
