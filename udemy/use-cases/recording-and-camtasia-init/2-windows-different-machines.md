@@ -46,8 +46,8 @@ This scenario covers the workflow for recording your lesson on one Windows machi
 
 1. In File Explorer on Machine A, create the following empty folder for your lesson: 
    - `C:\Users\<YourName>\Videos\lesson_01\`
-2. Navigate to Videos\lesson_01\
-3. Add folders RAW\ and EDIT\
+2. Open: Videos\lesson_01\
+3. Add folders: RAW,  EDIT, EXPORT, FINAL and DOCS
 
 > **Transfer Note:** Only the dehydrated Camtasia Project zip file (e.g., `lesson_01_CAMTASIA_PROJECT.zip`) needs to be copied to Dropbox (or your chosen transfer method) for use on Machine B. You do not need to mirror the entire folder structure in Dropbox—just transfer the zip file.
 
@@ -61,17 +61,18 @@ This scenario covers the workflow for recording your lesson on one Windows machi
 
 ### 3. Do a "Show and Tell" Recording
 
-1. Click the big red “Rec” button to begin recording.
-2. Narrate and demonstrate your lesson content.
-3. When finished, click “Stop.”
-4. This will bring up Save Recording dialog box.
+1. Position your microphone for recording.
+2. Click the big red “Rec” button to begin recording.
+3. Narrate and demonstrate your lesson content.
+4. When finished, click “Stop.”
+5. This will bring up Save Recording dialog box.
    1. Navigate to Videos\lesson_01\
    2. Open RAW/ sub-folder
    3. Set File name to lesson_01.trec
    4. Click Save.
 
-5. Camtasia Rev app will open.  
-   1. Continue in next step.
+6. Camtasia Rev app will open.  
+   1. Directly continue to next step.
 
 
 **Rationale:** Recording in one take keeps the workflow simple and avoids editing headaches later. With Camtasia, it is especially easy to remove repeated phrases or mistakes—just delete the unwanted ("dirty") take and keep the clean one. This makes editing your video almost as easy as editing a text document.
@@ -90,28 +91,31 @@ This scenario covers the workflow for recording your lesson on one Windows machi
 
 4. Do not start editing yet. Instead, immediately dehydrate (archive) your raw recording and project files:
 
-    1. In Camtasia, go to File > Export > Zipped Project...
+   1. In Camtasia, go to File > Export > Zipped Project...
 
-    - Save the zip file as
-       1.  File path: \Videos\lesson_01\EDIT\
-       2. File name: lesson_01_CAMTASIA_PROJECT.zip
-       3. Click Save button
-    - This step creates a special Camtasia zipped project file that contains everything needed to restore your project on another machine. It is not just an archive of raw files—it is the official Camtasia backup format, required for moving or restoring your project.
+   - Save the zip file as
+     1.  File path: \Videos\lesson_01\EDIT\
+     2.  File name: lesson_01_CAMTASIA_PROJECT.zip
+     3.  Click Save button
+   - This step creates a special Camtasia zipped project file that contains everything needed to restore your project on another machine. It is not just an archive of raw files—it is the official Camtasia backup format, required for moving or restoring your project.
+
+5. Close Camtasia Editor
 
 **Rationale:** Creating the Camtasia zipped project file before editing ensures you always have a clean, restorable starting point. This is critical for reproducibility and disaster recovery, and guarantees that all assets and project settings are included for transfer or backup.
 
 
 ### 5. Archive lesson_01 to Dropbox
 
-1. Navigate to:  \Videos\lesson_01
+1. In File Explorer, navigate to:  \Videos\lesson_01
 
 2. Select all files with Control + A
 
 3. Right-click on any of the selected folders, then select: "Compress to..." > ZIP File
 
-4. Rename that file to: `lesson_01_CAMTASIA_PROJECT.zip`
+4. Rename that file to: `lesson_01_ALL.zip`
 
 5. Upload that file from Machine A to Dropbox (or your chosen transfer method). This is the only file you need to archive and transfer.
+   1. I saved it in DropBox root folder `Camtasia and Audiate course`
 
 6. Wait for Dropbox (or your chosen transfer method) to fully sync the zip file to the cloud or USB drive.
 
@@ -148,8 +152,8 @@ This scenario covers the workflow for recording your lesson on one Windows machi
 
 1. On Machine B, open the `lesson_01_CAMTASIA_PROJECT.zip` file from the `Videos\lesson_01\EDIT\lesson_01` folder in Camtasia.
 
-1. Extract and restore your project as needed.
-2. Continue editing, exporting, or archiving as desired.
+2. Extract and restore your project as needed.
+3. Continue editing, exporting, or archiving as desired.
 
 **Rationale:** Rehydrating your project on Machine B allows you to pick up exactly where you left off, with all assets and project files intact and organized.
 
